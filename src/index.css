@@ -1006,8 +1006,8 @@ html {
 }
 
 .logo-carousel-item {
-  flex: 0 0 160px;
-  height: 80px;
+  flex: 0 0 260px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;

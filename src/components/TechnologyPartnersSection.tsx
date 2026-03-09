@@ -5,6 +5,7 @@ const partners = [
   { name: "AWS", image: "/aws.avif" },
   { name: "ServiceNow", image: "/Servicenow.png" },
   { name: "Salesforce", image: "/Salesforce.png" },
+  { name: "SAP", image: "/sap.png" },
 ];
 
 const TechnologyPartnersSection = () => {
