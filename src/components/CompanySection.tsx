@@ -217,13 +217,13 @@ const CompanySection = () => {
             <div className="bg-slate-50 flex items-center justify-center p-10">
               {activeLeader === "chairman" ? (
                 <img
-                  src="/muzeebur-rahaman.png"
+                  src="/muzeebur-rahaman.jpeg"
                   alt="Chairman Muzeebur Rahaman"
                   className="w-full max-w-sm rounded-3xl shadow-xl object-cover"
                 />
               ) : (
                 <img
-                  src="/Mohsin-mohamed.png"
+                  src="/mohsin-mohammed.jpeg"
                   alt="Founder & CEO Mohsin Mohammed"
                   className="w-full max-w-sm rounded-3xl shadow-xl object-cover"
                 />

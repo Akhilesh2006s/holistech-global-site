@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Globe2, ArrowRight, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Globe2, ArrowRight, Linkedin, Twitter, Phone } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -8,16 +8,10 @@ const quickLinks = [
   { label: "Industries", href: "#industries" },
   { label: "Insights", href: "#insights" },
   { label: "Company", href: "#company" },
-  { label: "Partner With Us", href: "#partner" },
   { label: "Contact", href: "#contact" },
 ];
 
 const FooterSection = () => {
-  const scrollToSection = (href: string) => {
-    const el = document.getElementById(href.replace("#", ""));
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
   return (
     <footer className="relative overflow-hidden">
       {/* Main footer */}
@@ -36,7 +30,6 @@ const FooterSection = () => {
               </div>
               <a
                 href="#contact"
-                onClick={(e) => { e.preventDefault(); scrollToSection("#contact"); }}
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-500 rounded-full hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-0.5 group"
               >
                 Get Started
@@ -51,13 +44,20 @@ const FooterSection = () => {
           <div className="grid md:grid-cols-3 gap-10">
             {/* Brand */}
             <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                  <span className="text-white font-heading font-bold text-sm">H</span>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/Logo.png"
+                  alt="Holistech Global Solutions logo"
+                  className="h-11 w-11 rounded-xl object-contain"
+                />
+                <div className="flex flex-col leading-tight">
+                  <span className="font-heading text-[16px] font-extrabold tracking-[0.16em] text-white uppercase">
+                    Holistech
+                  </span>
+                  <span className="font-heading text-[11px] font-semibold tracking-[0.22em] text-blue-400 uppercase">
+                    Global Solutions
+                  </span>
                 </div>
-                <span className="font-heading text-lg font-bold text-white tracking-tight">
-                  Holistech<span className="text-blue-400">Global</span>
-                </span>
               </div>
               <p className="text-white/40 text-sm leading-relaxed max-w-xs">
                 Strategic GTM and channel expansion partner for technology companies scaling across domestic and global
@@ -65,7 +65,7 @@ const FooterSection = () => {
               </p>
               {/* Social icons */}
               <div className="flex gap-3 pt-2">
-                <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors">
                   <Linkedin className="w-4 h-4 text-white/60" />
                 </a>
                 <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors">
@@ -85,7 +85,6 @@ const FooterSection = () => {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
                       className="text-sm text-white/40 hover:text-blue-400 transition-colors duration-200 flex items-center gap-1 group"
                     >
                       <ArrowRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
@@ -114,9 +113,15 @@ const FooterSection = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Phone className="w-4 h-4 text-blue-400" />
+                  </div>
+                  <span className="text-sm text-white/50">+91 98402 54952</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Globe2 className="w-4 h-4 text-blue-400" />
                   </div>
-                  <span className="text-sm text-white/50">India & global expansion support</span>
+                  <span className="text-sm text-white/50">India &amp; global expansion support</span>
                 </li>
               </ul>
             </div>

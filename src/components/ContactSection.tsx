@@ -79,6 +79,7 @@ const ContactSection = () => {
             <div className="space-y-4">
               {[
                 { icon: Mail, label: "Email", value: "mohsin.mohammed@holistechglobal.com" },
+                { icon: Phone, label: "Phone", value: "+91 98402 54952" },
                 { icon: MapPin, label: "Location", value: "India — Chennai | Bengaluru" },
                 { icon: Globe2, label: "Coverage", value: "India & global expansion support" },
               ].map((item) => (

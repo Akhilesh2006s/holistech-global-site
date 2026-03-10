@@ -57,13 +57,6 @@ const HeroSection = () => {
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="hero-btn-primary"
-                  onClick={() => scrollToSection("partner")}
-                >
-                  Partner With Us
-                </Button>
-                <Button
-                  size="lg"
                   variant="outline"
                   className="hero-btn-secondary"
                   onClick={() => scrollToSection("services")}

@@ -59,13 +59,17 @@ const Navbar = () => {
           >
             <img
               src="/Logo.png"
-              alt="Holistech Global logo"
-              className="h-9 w-9 rounded-xl object-contain"
+              alt="Holistech Global Solutions logo"
+              className="h-12 w-12 rounded-xl object-contain"
             />
-            <span className="font-heading text-lg font-bold tracking-tight text-slate-900 flex items-center">
-              <span>Holis tech</span>
-              <span className="text-blue-600 ml-1">Global</span>
-            </span>
+            <div className="flex flex-col leading-tight">
+              <span className="font-heading text-[16px] font-extrabold tracking-[0.16em] text-slate-900 uppercase">
+                Holistech
+              </span>
+              <span className="font-heading text-[11px] font-semibold tracking-[0.22em] text-blue-700 uppercase">
+                Global Solutions
+              </span>
+            </div>
           </a>
 
           {/* Desktop nav */}
