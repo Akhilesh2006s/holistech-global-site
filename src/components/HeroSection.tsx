@@ -46,7 +46,7 @@ const HeroSection = () => {
           <div className="hero-layout__text">
             <div className="relative z-10">
               <p className="hero-label text-sm uppercase tracking-[0.25em] mb-4 font-semibold">
-                Holistech GlobalSolutions
+                Holistech Global Solutions
               </p>
               <h1 className="hero-title">
                 {slides[current].title}

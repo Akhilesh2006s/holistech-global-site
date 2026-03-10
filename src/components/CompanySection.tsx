@@ -126,7 +126,7 @@ const CompanySection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="space-y-4 text-center md:text-left">
+            <div className="space-y-4 text-center">
               <div className="space-y-2">
                 <h3
                   className="text-2xl md:text-2xl font-bold font-heading tracking-tight text-slate-900"
@@ -136,10 +136,10 @@ const CompanySection = () => {
                 </h3>
                 <div className="space-y-1">
                   <p
-                    className="text-sm font-semibold text-blue-700 tracking-wide uppercase"
-                    style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.05em" }}
+                    className="text-sm font-semibold text-blue-700 tracking-[0.18em] uppercase"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
                   >
-                    Chairman, Holistech Global Solutions
+                    Chairman
                   </p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ const CompanySection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="space-y-4 text-center md:text-left">
+            <div className="space-y-4 text-center">
               <div className="space-y-2">
                 <h3
                   className="text-2xl md:text-2xl font-bold font-heading tracking-tight text-slate-900"
@@ -172,10 +172,10 @@ const CompanySection = () => {
                 </h3>
                 <div className="space-y-1">
                   <p
-                    className="text-sm font-semibold text-blue-700 tracking-wide uppercase"
-                    style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.05em" }}
+                    className="text-sm font-semibold text-blue-700 tracking-[0.18em] uppercase"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
                   >
-                    Founder &amp; CEO, Holistech Global Solutions
+                    Founder &amp; CEO
                   </p>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const partners = [
-  { name: "Microsoft", image: "/Microsoft.avif" },
-  { name: "AWS", image: "/aws.avif" },
+  { name: "Microsoft", image: "/Microsoft.png" },
+  { name: "AWS", image: "/aws.png" },
   { name: "ServiceNow", image: "/Servicenow.png" },
   { name: "Salesforce", image: "/Salesforce.png" },
   { name: "SAP", image: "/sap.png" },

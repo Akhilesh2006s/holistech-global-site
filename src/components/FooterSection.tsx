@@ -1,17 +1,25 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { Mail, MapPin, Globe2, ArrowRight, Linkedin, Twitter, Phone } from "lucide-react";
 
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Ecosystem", href: "#ecosystem" },
-  { label: "Industries", href: "#industries" },
-  { label: "Insights", href: "#insights" },
-  { label: "Company", href: "#company" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Ecosystem", href: "/ecosystem" },
+  { label: "Industries", href: "/industries" },
+  { label: "Insights", href: "/insights" },
+  { label: "Company", href: "/company" },
+  { label: "Contact", href: "/partner" },
 ];
 
 const FooterSection = () => {
+  const navigate = useNavigate();
+
+  const goTo = (href: string) => {
+    navigate(href);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="relative overflow-hidden">
       {/* Main footer */}
@@ -29,7 +37,11 @@ const FooterSection = () => {
                 </p>
               </div>
               <a
-                href="#contact"
+                href="/partner"
+                onClick={(e) => {
+                  e.preventDefault();
+                  goTo("/partner");
+                }}
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-500 rounded-full hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-0.5 group"
               >
                 Get Started
@@ -85,6 +97,10 @@ const FooterSection = () => {
                   <li key={link.href}>
                     <a
                       href={link.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        goTo(link.href);
+                      }}
                       className="text-sm text-white/40 hover:text-blue-400 transition-colors duration-200 flex items-center gap-1 group"
                     >
                       <ArrowRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
