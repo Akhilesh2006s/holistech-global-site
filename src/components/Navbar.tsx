@@ -58,18 +58,10 @@ const Navbar = () => {
             className="flex items-center gap-2 pl-2 pr-3 group"
           >
             <img
-              src="/Logo.png"
+              src="/Holistech.png"
               alt="Holistech Global Solutions logo"
-              className="h-12 w-12 rounded-xl object-contain"
+              className="h-12 w-auto object-contain"
             />
-            <div className="flex flex-col leading-tight">
-              <span className="font-heading text-[16px] font-extrabold tracking-[0.16em] text-slate-900 uppercase">
-                Holistech
-              </span>
-              <span className="font-heading text-[11px] font-semibold tracking-[0.22em] text-blue-700 uppercase">
-                Global Solutions
-              </span>
-            </div>
           </a>
 
           {/* Desktop nav */}
