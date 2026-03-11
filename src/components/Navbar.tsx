@@ -47,7 +47,7 @@ const Navbar = () => {
       className="fixed top-4 left-0 right-0 z-50"
     >
       <div className="px-4 lg:px-8">
-        <div className="max-w-6xl mx-auto flex items-center justify-between h-[64px] rounded-full bg-white/90 backdrop-blur-xl shadow-[0_18px_45px_rgba(15,23,42,0.20)] border border-white/70">
+        <div className="max-w-6xl mx-auto flex items-center justify-between h-[84px] rounded-full bg-white/90 backdrop-blur-xl shadow-[0_18px_45px_rgba(15,23,42,0.20)] border border-white/70">
           {/* Logo */}
           <a
             href="/"
@@ -55,12 +55,12 @@ const Navbar = () => {
               e.preventDefault();
               goTo("/");
             }}
-            className="flex items-center gap-2 pl-2 pr-3 group"
+            className="flex items-center gap-3 pl-3 pr-3 group"
           >
             <img
               src="/Holistech.png"
               alt="Holistech Global Solutions logo"
-              className="h-12 w-auto object-contain"
+              className="h-36 w-auto object-contain"
             />
           </a>
 
