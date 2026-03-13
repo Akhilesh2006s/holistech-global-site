@@ -32,10 +32,10 @@ const CompanyPage = () => {
                     Company
                   </p>
                   <h1 className="hero-title">
-                    Operator-led, channel-first growth advisory.
+                    Operator-led channel-first growth advisory
                   </h1>
                   <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
-                    A team of practitioners building scalable, partner-led revenue models with technology vendors.
+                    A team of practitioners building scalable partner-led revenue models with technology vendors
                   </p>
                 </div>
               </div>

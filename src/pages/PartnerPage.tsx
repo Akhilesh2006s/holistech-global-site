@@ -32,10 +32,10 @@ const PartnerPage = () => {
                     Partner With Us
                   </p>
                   <h1 className="hero-title">
-                    Build structured, long-term revenue partnerships with Holistech.
+                    Build structured           long-term revenue partnerships with Holistech
                   </h1>
                   <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
-                    For vendors, distributors, and partners seeking performance-linked, ecosystem-centric growth.
+                    For vendors distributors and partners seeking performance-linked ecosystem-centric growth
                   </p>
                 </div>
               </div>

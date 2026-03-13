@@ -1,21 +1,28 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const slides = [
   {
     title: "Operator-Led GTM & Channel Expansion for Global Technology Companies",
-    subtitle: "Where strategic design meets revenue execution.",
+    subtitle: "Where strategic design meets revenue execution",
     image: "/Banner1.png",
   },
   {
-    title: "We build scalable partner ecosystems that transform strategy into predictable revenue.",
-    subtitle: "Transforming OEM partnerships into predictable revenue engines.",
+    title: "We build scalable partner ecosystems that transform strategy into predictable revenue",
+    subtitle: "Transforming OEM partnerships into predictable revenue engines",
     image: "/hero.png",
+  },
+  {
+    title: "Channel intelligence that turns complex markets into clear growth paths",
+    subtitle: "Real-time partner pipeline and market insights for data-led decisions",
+    image: "/Banner2.png",
   },
 ];
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,7 +56,15 @@ const HeroSection = () => {
                 Holistech Global Solutions
               </p>
               <h1 className="hero-title">
-                {slides[current].title}
+                {current === 2 ? (
+                  <>
+                    Channel intelligence
+                    <span className="block">that turns complex markets</span>
+                    <span className="block">into clear growth paths</span>
+                  </>
+                ) : (
+                  slides[current].title
+                )}
               </h1>
               <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
                 {slides[current].subtitle}
@@ -59,7 +74,7 @@ const HeroSection = () => {
                   size="lg"
                   variant="outline"
                   className="hero-btn-secondary"
-                  onClick={() => scrollToSection("services")}
+                  onClick={() => navigate("/solutions")}
                 >
                   Explore Our Services
                 </Button>

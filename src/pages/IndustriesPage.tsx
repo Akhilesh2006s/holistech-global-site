@@ -32,10 +32,10 @@ const IndustriesPage = () => {
                     Industries
                   </p>
                   <h1 className="hero-title">
-                    Channel strategies across technology, BFSI, manufacturing, and enterprise.
+                    Channel strategies across industries
                   </h1>
                   <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
-                    Sector-specific partner models tailored to how your buyers evaluate and adopt technology.
+                    Sector-specific partner models tailored to how your buyers evaluate and adopt technology
                   </p>
                 </div>
               </div>

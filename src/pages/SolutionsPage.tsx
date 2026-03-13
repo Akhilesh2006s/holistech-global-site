@@ -32,10 +32,10 @@ const SolutionsPage = () => {
                     Solutions
                   </p>
                   <h1 className="hero-title">
-                    Outcome-driven GTM, distribution, and partner enablement.
+                    Outcome-driven GTM distribution and partner enablement
                   </h1>
                   <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
-                    Channel strategies, market expansion, and sales enablement designed for predictable revenue.
+                    Channel strategy market expansion and sales enablement built for predictable revenue
                   </p>
                 </div>
               </div>

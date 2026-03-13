@@ -32,10 +32,10 @@ const EcosystemPage = () => {
                     Ecosystem
                   </p>
                   <h1 className="hero-title">
-                    Connected vendor, partner, and enterprise ecosystems.
+                    Connected vendor partner and enterprise ecosystems
                   </h1>
                   <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
-                    Designing channel networks where every actor is aligned to long-term revenue.
+                    Designing channel networks where every actor is aligned to long-term revenue
                   </p>
                 </div>
               </div>

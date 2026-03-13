@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, Users, Globe, TrendingUp, Infinity } from "lucide-react";
+import { Sparkles, Users, Globe, TrendingUp, Infinity } from "lucide-react";
 
 const reasons = [
   {
@@ -10,9 +10,9 @@ const reasons = [
     bg: "bg-blue-50",
   },
   {
-    icon: Zap,
+    icon: Sparkles,
     title: "Advisory-Led Commercialization",
-    desc: "Revenue models designed around market reality, not theory.",
+    desc: "Revenue models designed around market reality not theory",
     gradient: "from-amber-500 to-orange-500",
     bg: "bg-amber-50",
   },

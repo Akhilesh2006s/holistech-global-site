@@ -32,10 +32,10 @@ const InsightsPage = () => {
                     Insights
                   </p>
                   <h1 className="hero-title">
-                    GTM, channel, and ecosystem perspectives for growth leaders.
+                    GTM channel and ecosystem perspectives for growth leaders
                   </h1>
                   <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
-                    Frameworks, playbooks, and market intelligence drawn from real execution.
+                    Frameworks playbooks and market intelligence drawn from real execution
                   </p>
                 </div>
               </div>

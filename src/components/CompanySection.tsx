@@ -157,7 +157,7 @@ const CompanySection = () => {
           >
             <div className="w-full aspect-square max-w-[260px] mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 ring-2 ring-slate-200/50 shadow-lg group-hover:ring-blue-200/50 transition-all duration-500">
               <img
-                src="/mohsin-mohammed - 2.jpg"
+                src="/mohsin-mohammed.jpg"
                 alt="Founder & CEO Mohsin Mohammed"
                 className="w-full h-full object-cover"
               />
@@ -223,7 +223,7 @@ const CompanySection = () => {
                 />
               ) : (
                 <img
-                  src="/mohsin-mohammed - 2.jpg"
+                  src="/mohsin-mohammed.jpg"
                   alt="Founder & CEO Mohsin Mohammed"
                   className="w-full max-w-sm rounded-3xl shadow-xl object-cover"
                 />

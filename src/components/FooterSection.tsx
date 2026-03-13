@@ -58,18 +58,10 @@ const FooterSection = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <img
-                  src="/Logo.png"
-                  alt="Holistech Global Solutions logo"
-                  className="h-11 w-11 rounded-xl object-contain"
+                  src="/1.png"
+                  alt="Holistech Global Solutions"
+                  className="h-20 lg:h-24 w-auto object-contain"
                 />
-                <div className="flex flex-col leading-tight">
-                  <span className="font-heading text-[16px] font-extrabold tracking-[0.16em] text-white uppercase">
-                    Holistech
-                  </span>
-                  <span className="font-heading text-[11px] font-semibold tracking-[0.22em] text-blue-400 uppercase">
-                    Global Solutions
-                  </span>
-                </div>
               </div>
               <p className="text-white/40 text-sm leading-relaxed max-w-xs">
                 Strategic GTM and channel expansion partner for technology companies scaling across domestic and global
@@ -115,26 +107,26 @@ const FooterSection = () => {
             <div>
               <h4 className="font-heading font-semibold text-white mb-5 text-sm uppercase tracking-wide">Contact</h4>
               <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-4 h-4 text-blue-400" />
                   </div>
                   <span className="text-sm text-white/50">mohsin.mohammed@holistechglobal.com</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-4 h-4 text-blue-400" />
                   </div>
                   <span className="text-sm text-white/50">India — Chennai | Bengaluru</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
                     <Phone className="w-4 h-4 text-blue-400" />
                   </div>
                   <span className="text-sm text-white/50">+91 98402 54952</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
                     <Globe2 className="w-4 h-4 text-blue-400" />
                   </div>
                   <span className="text-sm text-white/50">India &amp; global expansion support</span>
