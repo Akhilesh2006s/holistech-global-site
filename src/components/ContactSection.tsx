@@ -12,6 +12,25 @@ const conversationTypes = [
 const ContactSection = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const to = "mohsin.mohammed@holistechglobal.com";
+    const subject = encodeURIComponent(
+      `New partner enquiry from ${formData.name || "Holistech website"}`
+    );
+    const bodyLines = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      "",
+      "Message:",
+      formData.message,
+    ];
+
+    const body = encodeURIComponent(bodyLines.join("\n"));
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="contact" className="section-padding relative overflow-hidden" style={{ background: "transparent" }}>
       {/* Decorative */}
@@ -111,7 +130,7 @@ const ContactSection = () => {
             className="bg-white/75 backdrop-blur-sm rounded-2xl border border-slate-200/60 shadow-lg shadow-slate-200/30 p-6 md:p-8"
           >
             <h3 className="text-lg font-bold font-heading mb-6">Send Us a Message</h3>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Name</label>
                 <input
