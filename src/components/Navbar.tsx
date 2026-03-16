@@ -38,22 +38,30 @@ const Navbar = () => {
       <div className="px-4 lg:px-6">
 
         {/* Navbar container */}
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 px-5 py-0.5 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 px-4 lg:px-6 h-16 lg:h-18 rounded-full bg-white/90 backdrop-blur-xl shadow-lg border border-white/60">
 
-          {/* LOGO */}
+          {/* LOGO + WORDMARK */}
           <a
             href="/"
             onClick={(e) => {
               e.preventDefault();
               goTo("/");
             }}
-            className="flex items-center flex-shrink-0"
+            className="flex items-center gap-3 flex-shrink-0"
           >
             <img
-              src="/Holistech.png"
-              alt="Holistech"
-              className="h-28 lg:h-32 w-auto object-contain"
+              src="/Logo.png"
+              alt="Holistech Global Solutions"
+              className="h-10 w-auto object-contain drop-shadow-sm"
             />
+            <div className="hidden sm:flex flex-col leading-none text-left">
+              <span className="text-sm font-semibold tracking-[0.12em] text-slate-900 uppercase">
+                Holistech
+              </span>
+              <span className="text-[11px] font-semibold tracking-[0.12em] text-slate-700 uppercase mt-[2px]">
+                Global Solutions
+              </span>
+            </div>
           </a>
 
           {/* Desktop Nav */}
@@ -69,10 +77,10 @@ const Navbar = () => {
                     e.preventDefault();
                     goTo(link.href);
                   }}
-                  className={`px-4 py-1.5 text-sm font-medium rounded-md transition ${
+                  className={`px-4 py-1.5 text-sm font-medium rounded-full transition ${
                     isActive
-                      ? "text-indigo-600 bg-indigo-50"
-                      : "text-gray-600 hover:text-black hover:bg-gray-100"
+                      ? "text-indigo-600 bg-indigo-50 shadow-sm"
+                      : "text-gray-600 hover:text-slate-900 hover:bg-slate-100"
                   }`}
                 >
                   {link.label}
@@ -89,7 +97,7 @@ const Navbar = () => {
                 e.preventDefault();
                 goTo("/partner");
               }}
-              className="inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg shadow-md hover:shadow-lg transition"
+              className="inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full shadow-md hover:shadow-lg hover:translate-y-0.5 transition"
             >
               Partner With Us
               <ArrowRight className="w-4 h-4" />
@@ -98,7 +106,7 @@ const Navbar = () => {
 
           {/* Mobile Button */}
           <button
-            className="lg:hidden w-10 h-10 rounded-lg flex items-center justify-center bg-gray-100"
+            className="lg:hidden w-10 h-10 rounded-full flex items-center justify-center bg-slate-100 hover:bg-slate-200 transition"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={20} /> : <Menu size={20} />}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Rocket, Eye, X } from "lucide-react";
+import { Rocket, Eye, X, Linkedin } from "lucide-react";
 
 type LeaderId = "chairman" | "ceo" | null;
 
@@ -142,6 +142,16 @@ const CompanySection = () => {
                     Chairman
                   </p>
                 </div>
+                <div className="pt-2 flex justify-center">
+                  <a
+                    href="https://www.linkedin.com/in/muzeebur-rahaman-64b76b20/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-[6px] bg-[#0A66C2] text-white hover:bg-[#004182] transition-colors"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -177,6 +187,16 @@ const CompanySection = () => {
                   >
                     Founder &amp; CEO
                   </p>
+                </div>
+                <div className="pt-2 flex justify-center">
+                  <a
+                    href="https://www.linkedin.com/in/mohsin-mohammed-1511ab21/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-[6px] bg-[#0A66C2] text-white hover:bg-[#004182] transition-colors"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>
