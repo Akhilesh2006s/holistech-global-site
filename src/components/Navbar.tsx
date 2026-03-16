@@ -47,21 +47,13 @@ const Navbar = () => {
               e.preventDefault();
               goTo("/");
             }}
-            className="flex items-center gap-3 flex-shrink-0"
+            className="flex items-center flex-shrink-0"
           >
             <img
-              src="/Logo.png"
+              src="/1.png"
               alt="Holistech Global Solutions"
-              className="h-10 w-auto object-contain drop-shadow-sm"
+              className="h-8 lg:h-10 w-auto object-contain drop-shadow-sm"
             />
-            <div className="hidden sm:flex flex-col leading-none text-left">
-              <span className="text-sm font-semibold tracking-[0.12em] text-slate-900 uppercase">
-                Holistech
-              </span>
-              <span className="text-[11px] font-semibold tracking-[0.12em] text-slate-700 uppercase mt-[2px]">
-                Global Solutions
-              </span>
-            </div>
           </a>
 
           {/* Desktop Nav */}

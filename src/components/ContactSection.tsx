@@ -12,25 +12,6 @@ const conversationTypes = [
 const ContactSection = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const to = "mohsin.mohammed@holistechglobal.com";
-    const subject = encodeURIComponent(
-      `New partner enquiry from ${formData.name || "Holistech website"}`
-    );
-    const bodyLines = [
-      `Name: ${formData.name}`,
-      `Email: ${formData.email}`,
-      "",
-      "Message:",
-      formData.message,
-    ];
-
-    const body = encodeURIComponent(bodyLines.join("\n"));
-    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-  };
-
   return (
     <section id="contact" className="section-padding relative overflow-hidden" style={{ background: "transparent" }}>
       {/* Decorative */}
@@ -130,11 +111,16 @@ const ContactSection = () => {
             className="bg-white/75 backdrop-blur-sm rounded-2xl border border-slate-200/60 shadow-lg shadow-slate-200/30 p-6 md:p-8"
           >
             <h3 className="text-lg font-bold font-heading mb-6">Send Us a Message</h3>
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form
+              className="space-y-4"
+              action="https://formsubmit.co/mohsin.mohammed@holistechglobal.com"
+              method="POST"
+            >
               <div>
                 <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Name</label>
                 <input
                   type="text"
+                  name="name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all"
@@ -145,6 +131,7 @@ const ContactSection = () => {
                 <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Email</label>
                 <input
                   type="email"
+                  name="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all"
@@ -155,6 +142,7 @@ const ContactSection = () => {
                 <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Message</label>
                 <textarea
                   rows={4}
+                  name="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all resize-none"
