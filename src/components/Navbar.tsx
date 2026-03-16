@@ -33,12 +33,12 @@ const Navbar = () => {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="fixed top-4 left-0 right-0 z-50"
+      className="fixed top-3 left-0 right-0 z-50"
     >
       <div className="px-4 lg:px-6">
 
         {/* Navbar container */}
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 px-5 py-1.5 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 px-5 py-0.5 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg">
 
           {/* LOGO */}
           <a
@@ -52,7 +52,7 @@ const Navbar = () => {
             <img
               src="/Holistech.png"
               alt="Holistech"
-              className="h-24 w-auto object-contain"
+              className="h-28 lg:h-32 w-auto object-contain"
             />
           </a>
 
