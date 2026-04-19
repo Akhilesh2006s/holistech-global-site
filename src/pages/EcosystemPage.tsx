@@ -3,10 +3,16 @@ import PageBackground from "@/components/PageBackground";
 import Navbar from "@/components/Navbar";
 import EcosystemSection from "@/components/EcosystemSection";
 import FooterSection from "@/components/FooterSection";
+import { PageSeo } from "@/components/Seo";
 
 const EcosystemPage = () => {
   return (
     <>
+      <PageSeo
+        title="Ecosystem — Partner & Vendor Channel Networks"
+        description="Connected vendor, partner, and enterprise ecosystems: channel networks where every actor is aligned to long-term revenue."
+        image="/Ecosystem.png"
+      />
       <PageBackground />
 
       <motion.div

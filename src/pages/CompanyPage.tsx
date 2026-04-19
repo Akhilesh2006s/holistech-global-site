@@ -3,10 +3,16 @@ import PageBackground from "@/components/PageBackground";
 import Navbar from "@/components/Navbar";
 import CompanySection from "@/components/CompanySection";
 import FooterSection from "@/components/FooterSection";
+import { PageSeo } from "@/components/Seo";
 
 const CompanyPage = () => {
   return (
     <>
+      <PageSeo
+        title="Company — Operator-Led Channel-First Advisory"
+        description="Holistech Global Solutions is an operator-led strategic advisory and channel partner firm helping technology vendors build scalable partner-led revenue models."
+        image="/What%20we%20do.png"
+      />
       <PageBackground />
 
       <motion.div

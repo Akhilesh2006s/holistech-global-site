@@ -3,10 +3,16 @@ import PageBackground from "@/components/PageBackground";
 import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
 import FooterSection from "@/components/FooterSection";
+import { PageSeo } from "@/components/Seo";
 
 const SolutionsPage = () => {
   return (
     <>
+      <PageSeo
+        title="Solutions — GTM, Distribution & Partner Enablement"
+        description="Outcome-driven GTM distribution and partner enablement: channel strategy, market expansion, and sales enablement built for predictable revenue."
+        image="/Services.png"
+      />
       <PageBackground />
 
       <motion.div

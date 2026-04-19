@@ -3,10 +3,16 @@ import PageBackground from "@/components/PageBackground";
 import Navbar from "@/components/Navbar";
 import InsightsSection from "@/components/InsightsSection";
 import FooterSection from "@/components/FooterSection";
+import { PageSeo } from "@/components/Seo";
 
 const InsightsPage = () => {
   return (
     <>
+      <PageSeo
+        title="Insights — GTM, Channel & Ecosystem Perspectives"
+        description="GTM, channel, and ecosystem perspectives for growth leaders: frameworks, playbooks, and market intelligence drawn from real execution."
+        image="/insights.png"
+      />
       <PageBackground />
 
       <motion.div

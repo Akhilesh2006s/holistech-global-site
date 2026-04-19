@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const slides = [
   {
     title: "Operator-Led GTM & Channel Expansion for Global Technology Companies",
-    subtitle: "Where strategic design meets revenue execution",
+    subtitle: "Where strategy meets execution\nand growth becomes predictable",
     image: "/Banner1.png",
   },
   {
@@ -66,7 +66,7 @@ const HeroSection = () => {
                   slides[current].title
                 )}
               </h1>
-              <p className="hero-subtitle text-lg md:text-xl mb-10 font-body">
+              <p className="hero-subtitle whitespace-pre-line text-lg md:text-xl mb-10 font-body">
                 {slides[current].subtitle}
               </p>
               <div className="flex flex-wrap gap-4">

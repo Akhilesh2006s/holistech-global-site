@@ -4,10 +4,16 @@ import Navbar from "@/components/Navbar";
 import PartnerSection from "@/components/PartnerSection";
 import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
+import { PageSeo } from "@/components/Seo";
 
 const ContactPage = () => {
   return (
     <>
+      <PageSeo
+        title="Partner With Us — Revenue Partnerships & Contact"
+        description="Build structured, long-term revenue partnerships with Holistech: ecosystem-centric growth for vendors, distributors, and channel partners."
+        image="/hero.png"
+      />
       <PageBackground />
 
       <motion.div

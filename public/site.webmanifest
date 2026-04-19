@@ -1,0 +1,17 @@
+{
+  "name": "Holistech Global Solutions",
+  "short_name": "Holistech",
+  "description": "Operator-led GTM and channel expansion for global technology companies.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

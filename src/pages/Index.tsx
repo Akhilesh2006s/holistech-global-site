@@ -5,10 +5,17 @@ import HeroSection from "@/components/HeroSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import TechnologyPartnersSection from "@/components/TechnologyPartnersSection";
 import FooterSection from "@/components/FooterSection";
+import { PageSeo } from "@/components/Seo";
+import { SITE_DEFAULT_DESCRIPTION } from "@/config/site";
 
 const Index = () => {
   return (
     <>
+      <PageSeo
+        title="Operator-Led GTM & Channel Expansion"
+        description={SITE_DEFAULT_DESCRIPTION}
+        image="/Banner1.png"
+      />
       {/* Full-page scroll-reactive background */}
       <PageBackground />
 

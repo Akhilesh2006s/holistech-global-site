@@ -3,10 +3,16 @@ import PageBackground from "@/components/PageBackground";
 import Navbar from "@/components/Navbar";
 import IndustriesSection from "@/components/IndustriesSection";
 import FooterSection from "@/components/FooterSection";
+import { PageSeo } from "@/components/Seo";
 
 const IndustriesPage = () => {
   return (
     <>
+      <PageSeo
+        title="Industries — Sector-Specific Channel Strategy"
+        description="Channel strategies across industries: sector-specific partner models tailored to how your buyers evaluate and adopt technology."
+        image="/Industries.png"
+      />
       <PageBackground />
 
       <motion.div
