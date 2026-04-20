@@ -111,13 +111,13 @@ const FooterSection = () => {
                   <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-4 h-4 text-blue-400" />
                   </div>
-                  <span className="text-sm text-white/50">mohsin.mohammed@holistechglobal.com</span>
+                  <span className="text-sm text-white/50">contact@holistechglobal.com</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-4 h-4 text-blue-400" />
                   </div>
-                  <span className="text-sm text-white/50">India — Chennai | Bengaluru</span>
+                  <span className="text-sm text-white/50">India Chennai | Bengaluru</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">

@@ -84,7 +84,7 @@ const organizationSchema = () => {
           url: absoluteUrl("/Logo.png"),
         },
         description: SITE_DEFAULT_DESCRIPTION,
-        email: "mohsin.mohammed@holistechglobal.com",
+        email: "contact@holistechglobal.com",
       },
       {
         "@type": "WebSite",

@@ -78,9 +78,9 @@ const ContactSection = () => {
             {/* Contact details */}
             <div className="space-y-4">
               {[
-                { icon: Mail, label: "Email", value: "mohsin.mohammed@holistechglobal.com" },
+                { icon: Mail, label: "Email", value: "contact@holistechglobal.com" },
                 { icon: Phone, label: "Phone", value: "+91 98402 54952" },
-                { icon: MapPin, label: "Location", value: "India — Chennai | Bengaluru" },
+                { icon: MapPin, label: "Location", value: "India Chennai | Bengaluru" },
                 { icon: Globe2, label: "Coverage", value: "India & global expansion support" },
               ].map((item) => (
                 <motion.div
@@ -113,7 +113,7 @@ const ContactSection = () => {
             <h3 className="text-lg font-bold font-heading mb-6">Send Us a Message</h3>
             <form
               className="space-y-4"
-              action="https://formsubmit.co/mohsin.mohammed@holistechglobal.com"
+              action="https://formsubmit.co/contact@holistechglobal.com"
               method="POST"
             >
               <div>
